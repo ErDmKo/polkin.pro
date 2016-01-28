@@ -1,4 +1,6 @@
 @import  'theme/bootstrap.css';
+@import  'theme/responsive.css';
+
 @import  'theme/cherry-plugin.css';
 @import  'theme/style.css';
 @import  'theme/styles.css';

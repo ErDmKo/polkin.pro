@@ -847,7 +847,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { color:#888888; }
 @media (max-width: 1200px) {
 	.parallax-slider .controlBtn { width:940px !important; }
 }
-@media (max-width: 979px) {
+@media (max-width: 979px) and (min-width: 764px) {
 	.parallax-slider .controlBtn { width:724px !important; }
 }
 @media (max-width: 767px) {
@@ -921,7 +921,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { color:#888888; }
 @media (max-width: 1200px) {
 	.parallax-slider #paralaxSliderPagination ul { width:940px !important; }
 }
-@media (max-width: 979px) {
+@media (max-width: 979px) and (min-width: 764px) {
 	.parallax-slider #paralaxSliderPagination ul { width:724px !important; }
 }
 @media (max-width: 767px) {
@@ -1568,7 +1568,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { color:#888888; }
 	display:inline-block;
 	float:none;
 }
-@media (max-width: 979px) {
+@media (max-width: 979px) and (min-width: 764px) {
 	.filter-wrapper { margin:10px 0; }
 	.filter-wrapper .pull-right { float:left; }
 	.filter-wrapper .pull-right strong {
