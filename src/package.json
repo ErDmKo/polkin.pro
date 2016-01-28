@@ -1,0 +1,41 @@
+{
+  "name": "polkin.pro",
+  "version": "1.0.0",
+  "description": "doctor web site setatic",
+  "main": "manage.py",
+  "dev-configs": {
+    "directories": {
+      "dist": "../polkin/static/polkin/",
+      "src": "app"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ErDmKo",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "babelify": "^6.4.0",
+    "browserify": "^12.0.0",
+    "css-mqpacker": "^4.0.0",
+    "font-awesome": "^4.5.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-load-plugins": "^1.0.0",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-modernizr": "^1.0.0-alpha",
+    "gulp-postcss": "^6.0.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.4.2",
+    "jquery": "^2.1.4",
+    "modernizr": "^3.3.1",
+    "postcss-css-variables": "^0.5.1",
+    "postcss-import": "^7.1.0",
+    "postcss-inherit": "^1.0.0",
+    "postcss-mixins": "^2.1.0",
+    "postcss-nested": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
