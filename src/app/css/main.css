@@ -2,7 +2,12 @@
 @import  'theme/responsive.css';
 
 @import  'theme/cherry-plugin.css';
-@import  'theme/style.css';
 @import  'theme/styles.css';
 @import  'theme/magnific-popup.css';
+@import  'theme/style.css';
 @import  'theme/main-style.css';
+
+
+#mainCaptionHolder {
+    background: no-repeat 50% 50% / cover;
+}

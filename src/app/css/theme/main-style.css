@@ -558,8 +558,6 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { color:#888888; }
 	top:0;
 	left:0;
 	width:100%;
-	height:100%;
-	-webkit-transition:all 0.4s ease-in-out !important;
 	-moz-transition:all 0.4s ease-in-out !important;
 	-o-transition:all 0.4s ease-in-out !important;
 	transition:all 0.4s ease-in-out !important;
@@ -581,7 +579,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { color:#888888; }
 	font-weight:300 !important;
 	text-transform:uppercase;
 	margin:0;
-	background:url('./images/false_button.png') 0 0 repeat;
+	background:url('../images/false_button.png') 0 0 repeat;
 	-webkit-transition:all 0.4s ease-in-out;
 	-moz-transition:all 0.4s ease-in-out;
 	-o-transition:all 0.4s ease-in-out;
@@ -2746,7 +2744,10 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { color:#888888; }
 		padding-right:0 !important;
 	}
 	.custom_poz .select-menu { height:39px; }
-	.custom_poz .logo { padding:12px 0 15px; }
+	.custom_poz .logo {
+         width: 100%;
+         padding:12px 0 15px;
+     }
 	.nav {
 		padding:0 0 25px;
 		margin:0;
@@ -2878,7 +2879,6 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { color:#888888; }
 	margin-left:-25px;
 	margin-top:-25px;
 	border-radius:25px;
-	background:url(parallax-slider/img/spinner.GIF) 50% 50% #fff no-repeat;
 }
 .parallax-slider {
 	overflow:hidden;
@@ -3120,3 +3120,4 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { color:#888888; }
 	opacity:0;
 	filter:alpha(opacity=0);
 }
+h1{font:normal 22px/28px Ubuntu;color:#888888;}h2{font:normal 18px/26px Ubuntu;color:#888888;}h3{font:normal 15px/24px Ubuntu;color:#77c9b3;}h4{font:normal 14px/20px Ubuntu;color:#888888;}h5{font:normal 12px/18px Ubuntu;color:#77c9b3;}h6{font:normal 12px/18px Ubuntu;color:#333333;}body{font-weight:normal;}.logo_h__txt,.logo_link{font:normal 25px/31px Ubuntu;color:#888888;}.sf-menu>li>a{font:normal 15px/18px Ubuntu;color:#888888;}.nav.footer-nav a{font:normal 16px/18px;color:#888888;}

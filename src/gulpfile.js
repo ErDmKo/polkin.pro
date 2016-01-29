@@ -60,24 +60,27 @@ gulp.task('css', function () {
         .pipe(gulp.dest(dirs.dist + '/css'))
 });
 
-var jslibs = [
-    'node_modules/jquery/dist/jquery.min.js',
-]
-var csslibs = [
-    'node_modules/font-awesome/css/font-awesome.min.css',
-]
-var fonts = [
-    'node_modules/font-awesome/fonts/*',
-]
+var jslibs = 
 
 gulp.task('copy', function() {
-    gulp.src(fonts)
+    gulp.src([
+            'app/images/*',
+        ])
+        .pipe(gulp.dest(dirs.dist + '/images/'))
+    gulp.src([
+            'node_modules/font-awesome/fonts/*',
+        ])
         .pipe(gulp.dest(dirs.dist + '/fonts/'))
-    gulp.src(csslibs)
+    gulp.src([
+            'node_modules/font-awesome/css/font-awesome.min.css',
+        ])
         .pipe(plugins.concat("vendor.css"))
         .pipe(plugins.minifyCss())
         .pipe(gulp.dest(dirs.dist + '/css/'))
-    return gulp.src(jslibs)
+    return gulp.src([
+            'node_modules/jquery/dist/jquery.min.js',
+            'app/js/theme/*',
+        ])
         .pipe(plugins.concat("lib.js"))
         .pipe(plugins.uglify())
         .pipe(gulp.dest(dirs.dist + '/js/'));
