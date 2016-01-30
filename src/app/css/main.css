@@ -14,6 +14,7 @@
 .svg_icon {
     width: 170px;
     width: 141px;
+    text-align: center;
 }
 #mainCaptionHolder {
     background: no-repeat 50% 50% / cover;
