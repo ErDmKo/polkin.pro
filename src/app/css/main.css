@@ -3,6 +3,7 @@
 
 @import  'theme/cherry-plugin.css';
 @import  'theme/styles.css';
+@import  'theme/lazy-load.css';
 @import  'theme/magnific-popup.css';
 @import  'theme/style.css';
 @import  'theme/main-style.css';
