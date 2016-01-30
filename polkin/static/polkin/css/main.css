@@ -15003,6 +15003,11 @@ body {
   margin: 0;
 }
 
+.svg_icon {
+  width: 170px;
+  width: 141px;
+}
+
 #mainCaptionHolder {
   background: no-repeat 50% 50% / cover;
 }
