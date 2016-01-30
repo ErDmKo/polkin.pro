@@ -1,0 +1,42 @@
+.top_right_menu {
+    position: absolute;
+    @media (max-width: 767px) {
+        position: static;
+        height: auto;
+        text-align: left;
+        width: 100%;
+    }
+    right: 0px;
+    top: 0px;
+    bottom: -10px;
+    text-align: right;
+    #topnav a {
+        font-weight: 100;
+        text-transform: uppercase;
+        &:hover {
+            color: #77c9b3;
+        }
+    }
+    @media (min-width: 979px) {
+        #topnav a {
+            font-size: 20px;
+        }
+    }
+    &:after, &__contanier {
+        display: inline-block;
+        vertical-align: middle;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+    &:after {
+        content: '';
+        height: 100%;
+        @media (max-width: 767px) {
+            content: none;
+        }
+    }
+    .nav.clearfix {
+        margin: 0;    
+    }
+}

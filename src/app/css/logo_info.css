@@ -1,0 +1,28 @@
+.logo_info {
+    &__svg {
+        width: 70px;
+        height: 70px;
+        margin-right: 10px;
+    }
+    &__contanier, &__svg {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+        font-size: 13px;
+        font-weight: 400;
+        @media (max-width: 480px) {
+            text-align: center;
+        }
+        @media (min-width: 979px) {
+            font: 400 18px/25px Ubuntu;
+        }
+    }
+    &__contanier {
+        @media (max-width: 480px) {
+            margin-top: 10px;
+        }
+    }
+    &__post {
+        text-transform: uppercase;
+    }
+}

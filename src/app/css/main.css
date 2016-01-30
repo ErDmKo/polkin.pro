@@ -7,6 +7,9 @@
 @import  'theme/style.css';
 @import  'theme/main-style.css';
 
+@import  'logo_info.css';
+@import  'top_right_menu.css';
+
 
 #mainCaptionHolder {
     background: no-repeat 50% 50% / cover;

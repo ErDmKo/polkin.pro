@@ -2,13 +2,6 @@
 
 	$(document).ready(function(){
 
-		$('.nav__primary>ul>li>a').each(function(){
-	        var $this = $(this),
-	            txt = $this.text();
-		        $this.html('<div><span>'+ txt +'</span></div><div><span>'+ txt +'</span></div>');
-		});
-
-
 		$('.banner-btn').find('a').addClass('btn-primary');
 
 		$('.comment-reply-link').addClass('btn btn-primary');

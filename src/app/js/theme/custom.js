@@ -29,7 +29,7 @@ jQuery(document).ready(function(){
             speed: "normal", // animation speed
             autoArrows: false, // generation of arrow mark-up (for submenu)
             disableHI: true // to disable hoverIntent detection
-        });
+        }); 
 
         //Zoom fix
         //IPad/IPhone
