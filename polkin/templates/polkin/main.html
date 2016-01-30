@@ -58,7 +58,7 @@
                 <h2 class="type_2">
                     рака щитовидной железы
                 </h2>
-                <a href="./portfolio" class="btn-primary">
+                <a class="popup-with-move-anim btn-primary" href="#small-dialog">
                     <div>
                         <i>Задать вопрос врачу</i>
                     </div>
@@ -177,5 +177,26 @@
 </div>
         </div>
     </div>
+</div>
+<div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+    <form class="main-holder wpcf7">
+        <h2>Задать вопрос врачу</h2>
+        <textarea 
+            style="width: 100%"
+            class=""
+            placeholder="текст вопроса">
+        </textarea>
+        <div
+            class="submit-wrap">
+            <input
+                 type="reset"
+                 value="Очистить"
+                 class="btn btn-primary"></input>
+            <input 
+                type="submit"
+                 value="Отправить"
+                 class="wpcf7-form-control wpcf7-submit btn btn-primary"></input>
+         </div>
+    </form>
 </div>
 {% endblock %}

@@ -74,6 +74,21 @@ jQuery(document).ready(function(){
 // ---------------------------------------------------------
 // Call Magnific Popup
 // ---------------------------------------------------------
+    jQuery('.popup-with-move-anim').magnificPopup({
+        type: 'inline',
+
+        fixedContentPos: true,
+        fixedBgPos: true,
+
+        overflowY: 'auto',
+
+        closeBtnInside: true,
+        preloader: false,
+        
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-slide-bottom'
+    });
 	jQuery(".thumbnail").parent().each(function(){magnific_popup_init(jQuery(this))});
 // ---------------------------------------------------------
 // Tooltip
