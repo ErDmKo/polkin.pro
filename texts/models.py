@@ -19,6 +19,9 @@ class SmallFeedback(models.Model):
         blank=True,
         verbose_name='Сообщение'
     )
+    date = models.DateTimeField(
+        default=timezone.now, verbose_name='Дата публикации',
+    )
     def __unicode__(self):
         return '{} - {}'.format(self.pk, self.first_name)
 
@@ -43,6 +46,9 @@ class Feedback(models.Model):
     comment = models.TextField(
         blank=True,
         verbose_name='Сообщение'
+    )
+    date = models.DateTimeField(
+        default=timezone.now, verbose_name='Дата публикации',
     )
     def get_absolute_url(self):
         from django.core.urlresolvers import reverse
