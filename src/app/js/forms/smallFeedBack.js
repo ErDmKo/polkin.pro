@@ -1,12 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+//import { ValidationErros } from './smallfeedback.js';
+
+
+export class ValidationErros extends React.Component {
+    render() {
+        return <div className="errors">{this.props.errors.map((info, i) => {
+            return <span key={i} className="formError">{info}</span>
+        })}</div>
+    }
+}
 
 export class CommentForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            author: '',
-            text: ''
+            first_name: '',
+            comment: '',
+            errors: {
+                first_name: [],
+                comment: []
+            }
         };
         this.handleTextChange = this.handleTextChange.bind(this);
         this.handleAuthorChange = this.handleAuthorChange.bind(this);
@@ -22,15 +36,12 @@ export class CommentForm extends React.Component {
     }
     handleSubmit(e) {
         e.preventDefault();
-        var author = this.state.author.trim();
-        var text = this.state.text.trim();
-        if (!text || !author) {
-          return;
-        }
+        var first_name = this.state.first_name.trim();
+        var comment = this.state.comment.trim();
         this.handleCommentSubmit(
             CONFIG.urls.smallfeedback, {
-            first_name: author,
-            comment: text
+            first_name: first_name,
+            comment: comment
         });
     }
     handleCommentSubmit(url, comment) {
@@ -49,6 +60,9 @@ export class CommentForm extends React.Component {
                 })
             },
             error: (xhr, status, err) => {
+                this.setState({
+                    errors: Object.assign(this.state.errors, xhr.responseJSON)
+                })
                 console.error(url, status, err.toString());
             }
         });
@@ -62,15 +76,17 @@ export class CommentForm extends React.Component {
                     style={{width: '100%' }}
                     placeholder="Ваше имя"
                     className=""
-                    value={this.state.author}
+                    value={this.state.first_name}
                     onChange={this.handleAuthorChange}
                     type="text"/>
+                <ValidationErros errors={this.state.errors.first_name}/>
                 <textarea 
                     style={{width: '100%' }}
                     className=""
-                    value={this.state.text}
+                    value={this.state.comment}
                     onChange={this.handleTextChange}
                     placeholder="Отзыв"></textarea>
+                <ValidationErros errors={this.state.errors.comment}/>
                 <div
                     className="submit-wrap">
                     <input

@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
-import { CommentForm } from './smallfeedback.js';
+import { CommentForm, ValidationErros } from './smallfeedback.js';
+
 
 class BigForm extends CommentForm {
     constructor(props){
@@ -9,7 +10,14 @@ class BigForm extends CommentForm {
             first_name: '',
             phone: '',
             email: '',
-            comment: ''
+            comment: '',
+            success: false,
+            errors: {
+                first_name: [],
+                phone: [],
+                email: [],
+                comment: [],
+            }
         }
         this.handleStateKey = this.handleStateKey.bind(this);
     }
@@ -27,9 +35,6 @@ class BigForm extends CommentForm {
         let comment = this.state.comment.trim();
         let phone = this.state.phone.trim();
         let email = this.state.email.trim();
-        if (!comment || !first_name || !email ) {
-          return;
-        }
         this.handleCommentSubmit(
             CONFIG.urls.feedback, {
                 first_name: first_name,
@@ -44,7 +49,7 @@ class BigForm extends CommentForm {
             return (
                 <form onSubmit={this.handleSubmit} className="wpcf7-form">
                     <div className="row-fluid">
-                        <p className="span4 field">
+                        <div className="span4 field">
                             <span className="wpcf7-form-control-wrap your-name">
                                 <input
                                     type="text"
@@ -57,8 +62,9 @@ class BigForm extends CommentForm {
                                     aria-invalid="false"
                                     placeholder="Ваше имя:"/>
                             </span>
-                        </p>
-                        <p
+                            <ValidationErros errors={this.state.errors.first_name}/>
+                        </div>
+                        <div
                             className="span4 field">
                             <span
                                 className="wpcf7-form-control-wrap your-email">
@@ -73,8 +79,9 @@ class BigForm extends CommentForm {
                                     aria-invalid="false"
                                     placeholder="E-mail:"/>
                             </span>
-                        </p>
-                        <p className="span4 field">
+                            <ValidationErros errors={this.state.errors.email}/>
+                        </div>
+                        <div className="span4 field">
                             <span
                                 className="wpcf7-form-control-wrap your-phone">
                                 <input
@@ -88,9 +95,10 @@ class BigForm extends CommentForm {
                                     aria-invalid="false"
                                     placeholder="Телефон:"/>
                             </span>
-                        </p>
+                            <ValidationErros errors={this.state.errors.phone}/>
+                        </div>
                     </div>
-                    <p className="field">
+                    <div className="field">
                         <span
                             className="wpcf7-form-control-wrap your-message">
                             <textarea
@@ -103,7 +111,8 @@ class BigForm extends CommentForm {
                                 aria-invalid="false"
                                 placeholder="Сообщение:"></textarea>
                         </span>
-                    </p>
+                        <ValidationErros errors={this.state.errors.comment}/>
+                    </div>
                     <p
                         className="submit-wrap">
                         <input
