@@ -3,6 +3,10 @@
         width: 70px;
         height: 70px;
         margin-right: 10px;
+        @media (max-width: 767px)  {
+            display: block;
+            margin: 0 auto 15px;
+        }
     }
     &__contanier, &__svg {
         display: inline-block;

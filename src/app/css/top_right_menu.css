@@ -32,9 +32,7 @@
         }
     }
     #topnav {
-        @media (max-width: 767px) {
-            margin: 0px;
-        }
+        margin: 0px;
     }
     #topnav a {
         font-weight: 100;

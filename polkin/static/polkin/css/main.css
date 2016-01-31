@@ -15113,6 +15113,10 @@ body {
   color: #77c9b3;
 }
 
+.top_right_menu #topnav {
+  margin: 0px;
+}
+
 .top_right_menu #topnav a {
   font-weight: 100;
   text-transform: uppercase;
@@ -16346,6 +16350,11 @@ body {
     padding: 0 9%;
   }
 
+  .logo_info__svg {
+    display: block;
+    margin: 0 auto 15px;
+  }
+
   .top_right_menu {
     position: static;
     height: auto;
@@ -16363,10 +16372,6 @@ body {
 
   .top_right_menu__item {
     margin: 0 auto;
-  }
-
-  .top_right_menu #topnav {
-    margin: 0px;
   }
 
   .top_right_menu #topnav a {
