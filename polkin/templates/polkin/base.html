@@ -66,7 +66,9 @@
                                                            <a href="tel:+79108637283">+7(910)863-72-83</a>
                                                        </li>
                                                        <li class="top_right_menu__item">
-                                                            <a href="" style="display: inline-block;">
+                                                            <a 
+                                                                href="{% url 'contacts' %}"
+                                                                style="display: inline-block;">
                                                                 <section class="btn-primary mega-boler">
                                                                     <div>
                                                                         <i>
@@ -116,8 +118,8 @@
                                         Отзывы
                                     </a>
                                </li>
-                               <li class="{% if object.slug == 'contacts' %}active {% endif %} static_menu__item">
-                                   <a class="static_menu__item" href="{% url 'detail' slug='contacts' %}">
+                               <li class="{% if path == '/contacts/' %}active {% endif %} static_menu__item">
+                                   <a class="static_menu__item" href="{% url 'contacts' %}">
                                         Контакты
                                     </a>
                                </li>

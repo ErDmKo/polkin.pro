@@ -7,6 +7,7 @@ def extra_var(request):
     c = {
         'settings': dict([(var.name, var) for var in text_models.TextSettings.objects.all()]),
         'now_date': datetime.datetime.now(),
+        'path': request.path,
     }
     try:
         page = text_models.Text.objects.get(slug=request.path) 

@@ -11,6 +11,7 @@ urlpatterns = [
             template_name='polkin/main.html',
             queryset=texts_models.SmallFeedback.objects.filter(pub=True),
         ), name='main'),
+    url(r'^contacts/$', generic.TemplateView.as_view(template_name='polkin/contacts.html'), name='contacts'),
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
     url(r'^api/', include(api_urls, namespace='api')),
     url(
