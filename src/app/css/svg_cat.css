@@ -1,0 +1,25 @@
+.svg_cat {
+    &__svg_icon {
+        svg {
+            height: 117px;
+            .st2, .head_thyroid .st1 {
+                transition: all 0.4s ease;
+                .svg_cat:hover & {
+                    fill: #77c9b3;
+                }
+            }
+        }
+    }
+    &__title {
+        color: #888888;
+        transition: all 0.4s ease;
+        .svg_cat:hover & {
+            color: #77c9b3;
+        }
+    }
+    &__text {
+        .svg_cat:hover & {
+            color: #888888;
+        }
+    }
+}

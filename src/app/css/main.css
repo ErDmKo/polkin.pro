@@ -10,11 +10,8 @@
 
 @import  'logo_info.css';
 @import  'top_right_menu.css';
+@import  'svg_cat.css';
 
-
-.svg_icon {
-    height: 117px;
-}
 #mainCaptionHolder {
     background: no-repeat 50% 50% / cover;
 }

@@ -1,48 +1,6 @@
 {% extends 'polkin/base.html' %}
 {% load staticfiles %}
 {% block 'content' %}
-<header class="motopress-wrapper header">
-    <div class="container">
-        <div class="row">
-            <div class="span12" >
-                <div class="custom_poz">
-                    <div class="menu_bg">
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="logo_poz span7">
-                                <div class="text-center logo pull-left logo_info">
-                                    <div class="logo_info__svg">{% include 'polkin/svg/logo.svg' %}</div>
-                                    <div class="logo_info__contanier">
-                                        <div class="logo_info__post">Хирург-онколог, радиолог</div>
-                                        <div class="logo_info__name">Полькин Вячеслав Викторович </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="span5 menu_poz top_right_menu">
-                               <div class="block_menu top_right_menu__contanier">
-                                   <nav class="nav clearfix">
-                                       <ul class="sf-menu" id="topnav">
-                                           <li class="top_right_menu__item">
-                                               <a href="tel:+79108637283">+7(910)863-72-83</a>
-                                           </li>
-                                           <li class="top_right_menu__item">
-                                               <a href="/">О враче</a>
-                                           </li>
-                                           <li class="top_right_menu__item">
-                                               <a href="/">Лечение</a>
-                                           </li>
-                                       </ul>
-                                   </nav>
-                               </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
 <div 
     id="parallax-slider"
     class="parallax-slider">
@@ -76,101 +34,54 @@
                         <section 
                             class="lazy-load-box trigger effect-slidefromleft"
                             style="-webkit-transition: all 900ms ease; -moz-transition: all 900ms ease; -ms-transition: all 900ms ease; -o-transition: all 900ms ease; transition: all 900ms ease;">
-                           <div class="service-box2">
-                            <figure>
-                                <img class="svg_icon" src="{% static 'polkin/images/head_thyroid.svg' %}" alt="">
-                            </figure>
+                           <a
+                            href="{% url 'detail' slug='thyroid' %}"
+                            class="svg_cat  service-box2">
+                                <figure>
+                                    <div class="svg_cat__svg_icon" >
+                                        {% include 'polkin/svg/head_thyroid.svg' %}
+                                    </div>
+                                </figure>
                                 <div
                                      class="service-box2_body">
                                      <h3
-                                         class="title">
-                                             <a href="./about">
-                                                щитовидная железа
-                                            </a>
+                                         class="title svg_cat__title">
+                                            щитовидная железа
                                     </h3>
-                                    <div class="service-box_txt">
+                                    <div class="service-box_txt svg_cat__text">
                                         Щитовидная железа у человека находится на передней поверхности шеи. Часто ее форму сравнивают с бабочкой, крылья которой, это правая и левая доли щитовидной железы, а соединяет их перешеек. 
                                     </div>
                                 </div>
-                           </div>
+                           </a>
                         </section>
                     </div>
                     <div class="span6">
-                        <section 
+                        <section
                             class="lazy-load-box trigger effect-slidefromright"
                             style="-webkit-transition: all 900ms ease; -moz-transition: all 900ms ease; -ms-transition: all 900ms ease; -o-transition: all 900ms ease; transition: all 900ms ease;">
-                           <div class="service-box2" >
-                            <figure class="">
-                                <img class="svg_icon" src="{% static 'polkin/images/head.svg' %}" alt="">
-                            </figure>
+                           <a
+                            href="{% url 'detail' slug='cancer' %}"
+                            class="svg_cat service-box2">
+                                <figure>
+                                    <div class="svg_cat__svg_icon" >
+                                        {% include 'polkin/svg/head.svg' %}
+                                    </div>
+                                </figure>
                                 <div
                                      class="service-box2_body">
                                      <h3
-                                         class="title">
-                                             <a href="./about">
+                                         class="title svg_cat__title">
                                                 опухоли головы и шеи
-                                            </a>
                                     </h3>
-                                    <div class="service-box_txt">
+                                    <div class="service-box_txt svg_cat__text">
                                         К опухолям головы и шеи относят онкологические заболевания носа, рта, гортани, глотки, слюнных желез, придаточных пазух.
                                     </div>
                                 </div>
-                           </div>
+                           </a>
                         </section>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-<div class="motopress-wrapper content-holder clearfix footer">
-    <div class="container">
-        <div class="row">
-            <div class="span12 footer-widgets">
-<div class="row">
-<div class="span12 ext_poz1">
-<div data-motopress-type="dynamic-sidebar" data-motopress-sidebar-id="footer-sidebar-1">
-<div id="text-5" class="visible-all-devices ">
-    <div class="textwidget">
-        <p>
-            Медицинский радиологический научный центр им. А.Ф. Цыба - 
-            филиал ФГБУ «НМИРЦ» Минздрава России
-        </p>
-       <a class="ph" href="tel:+79108637283">+7(910)863-72-83</a>
-<p class="address">249036, Калужская область, г.Обнинск, ул.Королева, 4</p>
-<a href="mailto:mrrc@mrrc.obninsk.ru" class="mail">mrrc@mrrc.obninsk.ru</a></div>
-</div> </div>
-</div>
-<div class="span12 ext_poz2">
-<div data-motopress-type="dynamic-sidebar" data-motopress-sidebar-id="footer-sidebar-2">
-<div id="social_networks-2">
- 
-<ul class="social social__row clearfix unstyled">
-<li class="social_li">
-<a class="social_link social_link__facebook" rel="tooltip" data-original-title="facebook" href="#" target="_blank">
-<span class="social_ico"><img src="http://livedemo00.template-help.com/wordpress_54581/wp-content/themes/theme54581/images/icons/facebook.png" alt=""></span>
-</a>
-</li>
-<li class="social_li">
-<a class="social_link social_link__twitter" rel="tooltip" data-original-title="twitter" href="#" target="_blank">
-<span class="social_ico"><img src="http://livedemo00.template-help.com/wordpress_54581/wp-content/themes/theme54581/images/icons/twitter.png" alt=""></span>
-</a>
-</li>
-</ul>
- 
-</div> </div>
-</div>
-<div class="clear"></div>
-<div class="span6 ext_poz3">
-<div data-motopress-type="dynamic-sidebar" data-motopress-sidebar-id="footer-sidebar-3">
-</div>
-</div>
-<div class="span6 ext_poz4">
-<div data-motopress-type="dynamic-sidebar" data-motopress-sidebar-id="footer-sidebar-4">
-</div>
-</div>
-</div>
-</div>
         </div>
     </div>
 </div>

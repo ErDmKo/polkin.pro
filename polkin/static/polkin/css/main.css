@@ -15098,6 +15098,10 @@ body {
   text-align: right;
 }
 
+.top_right_menu__item.active a {
+  color: #77c9b3;
+}
+
 .top_right_menu #topnav a {
   font-weight: 100;
   text-transform: uppercase;
@@ -15122,8 +15126,33 @@ body {
   margin: 0;
 }
 
-.svg_icon {
+.svg_cat__svg_icon svg {
   height: 117px;
+}
+
+.svg_cat__svg_icon svg .st2,
+.svg_cat__svg_icon svg .head_thyroid .st1 {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.svg_cat:hover .svg_cat__svg_icon svg .st2,
+.svg_cat:hover .svg_cat__svg_icon svg .head_thyroid .st1 {
+  fill: #77c9b3;
+}
+
+.svg_cat__title {
+  color: #888888;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.svg_cat:hover .svg_cat__title {
+  color: #77c9b3;
+}
+
+.svg_cat:hover .svg_cat__text {
+  color: #888888;
 }
 
 #mainCaptionHolder {
