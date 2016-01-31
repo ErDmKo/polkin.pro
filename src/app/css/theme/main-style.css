@@ -301,7 +301,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { color:#888888; }
 	position:relative;
 	display:inline-block;
 	width:100%;
-	padding:19px 0 12px;
+	padding:10px 0;
 	margin-bottom:0;
 	background:#f8f8f8;
 	border:none;
@@ -533,57 +533,8 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { color:#888888; }
 	display:inline-block;
 	padding-bottom:0;
 }
-.nav .sf-menu >li {
-	background:transparent;
-	margin:0 0 0 24px;
-}
-.nav .sf-menu >li a {
-	letter-spacing:0;
-	border:none !important;
-	padding:0;
-	text-shadow:none;
-	overflow:hidden;
-	pointer-events:auto;
-}
-.nav .sf-menu >li a >div {
-	position:relative;
-	top:0;
-	left:0;
-	width:100%;
-	-moz-transition:all 0.4s ease-in-out !important;
-	-o-transition:all 0.4s ease-in-out !important;
-	transition:all 0.4s ease-in-out !important;
-}
-.nav .sf-menu >li a >div:first-child {
-	position:absolute;
-	background:transparent;
-}
-.nav .sf-menu >li a >div:first-child+div { top:200px; }
-.nav .sf-menu >li a >div:first-child+div span {
-	opacity:0;
-	filter:alpha(opacity=0);
-	color:#77c9b3;
-}
-.nav .sf-menu >li a >div span {
-	position:relative;
-	display:block;
-	padding:10px 0 6px;
-	font-weight:300 !important;
-	text-transform:uppercase;
-	margin:0;
-	background:url('../images/false_button.png') 0 0 repeat;
-	-webkit-transition:all 0.4s ease-in-out;
-	-moz-transition:all 0.4s ease-in-out;
-	-o-transition:all 0.4s ease-in-out;
-	transition:all 0.4s ease-in-out;
-}
 .nav .sf-menu >li:first-child { margin-left:0; }
 .nav .sf-menu >li:last-child:before { display:none; }
-.nav .sf-menu >li.current_page_item, .nav .sf-menu >li.sfHover, .nav .sf-menu >li:hover { z-index:10; }
-.nav .sf-menu >li.current_page_item >a, .nav .sf-menu >li.sfHover >a, .nav .sf-menu >li:hover >a {
-	text-decoration:none;
-	background:transparent;
-}
 .nav .sf-menu >li.current_page_item >a >div:first-child, .nav .sf-menu >li.sfHover >a >div:first-child, .nav .sf-menu >li:hover >a >div:first-child {
 	top:200px;
 	-webkit-transition:all 0.5s ease-in-out;

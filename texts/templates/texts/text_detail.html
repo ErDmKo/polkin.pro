@@ -5,15 +5,19 @@
     <div class="container">
         <div class="row">
             <div class="span12">
-                <div class="row">
-                    <div class="span12">
-                        <section class="title-section">
-                            <h1 class="title-header">
-                                {{ object.title }}
-                            </h1>
-                        </section>
-                    </div>
-                </div>
+                <section class="">
+                    <h1 class="title-header">
+                        {{ object.title }}
+                    </h1>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="motopress-wrapper content-holder clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
                 <div class="row">
                     <div id="content" class="span12">
                         {{ object.desc|safe }}

@@ -66,9 +66,13 @@
                                                            <a href="tel:+79108637283">+7(910)863-72-83</a>
                                                        </li>
                                                        <li class="top_right_menu__item">
-                                                            <a href="">
+                                                            <a href="" style="display: inline-block;">
                                                                 <section class="btn-primary mega-boler">
-                                                                    Спросить врача
+                                                                    <div>
+                                                                        <i>
+                                                                        Спросить врача
+                                                                        </i>
+                                                                    </div>
                                                                 </section>
                                                             </a>
                                                        </li>
@@ -91,15 +95,30 @@
                 <div class="row">
                     <div class="span12">
                         <section class="title-section">
-                           <ul class="title-section">
-                               <li class="{% if object.slug == 'about' %}active {% endif %}top_right_menu__item">
-                                   <a href="{% url 'detail' slug='about' %}">
-                                       <h2 class="title-header">О враче</h2>
+                           <ul class="sf-menu static_menu">
+                               <li class="{% if object.slug == 'about' %}active {% endif %} static_menu__item">
+                                   <a class="static_menu__header" href="{% url 'detail' slug='about' %}">
+                                       О враче
                                    </a>
                                </li>
-                               <li class="{% if object.slug == 'treatment' %}active {% endif %}top_right_menu__item">
-                                   <a href="{% url 'detail' slug='treatment' %}">
-                                        <h2 class="title-header">Лечение</h2>
+                               <li class="{% if object.slug == 'treatment' %}active {% endif %} static_menu__item">
+                                   <a class="static_menu__item" href="{% url 'detail' slug='treatment' %}">
+                                        Лечение
+                                    </a>
+                               </li>
+                               <li class="{% if object.slug == 'science' %}active {% endif %} static_menu__item">
+                                   <a class="static_menu__header" href="{% url 'detail' slug='science' %}">
+                                        Наука
+                                    </a>
+                               </li>
+                               <li class="{% if object.slug == 'reviews' %}active {% endif %} static_menu__item">
+                                   <a class="static_menu__item" href="{% url 'detail' slug='revews' %}">
+                                        Отзывы
+                                    </a>
+                               </li>
+                               <li class="{% if object.slug == 'contacts' %}active {% endif %} static_menu__item">
+                                   <a class="static_menu__item" href="{% url 'detail' slug='contacts' %}">
+                                        Контакты
                                     </a>
                                </li>
                            </ul>

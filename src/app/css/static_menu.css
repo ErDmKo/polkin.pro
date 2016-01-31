@@ -1,0 +1,16 @@
+.static_menu {
+    padding: 10px 0px;
+    text-align: center;
+    &__item {
+        display: inline-block;
+        text-transform: uppercase;
+        margin: 0px 10px;
+        span {
+            font-size: 20px;
+            font-weight: 100 !important;
+        }
+        &:hover a, &.active a {
+            color: #77c9b3 !important;
+        }
+    }
+}
