@@ -14988,9 +14988,10 @@ body {
   display: inline-block;
   text-transform: uppercase;
   margin: 0px 10px;
+  font-weight: 100 !important;
 }
 
-.static_menu__item span {
+.static_menu__item a {
   font-size: 20px;
   font-weight: 100 !important;
 }
