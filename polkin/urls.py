@@ -6,7 +6,11 @@ from texts import models as texts_models
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', generic.TemplateView.as_view(template_name='polkin/main.html'), name='main'),
+    url(r'^$', 
+        generic.list.ListView.as_view(
+            template_name='polkin/main.html',
+            queryset=texts_models.SmallFeedback.objects.filter(pub=True),
+        ), name='main'),
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
     url(r'^api/', include(api_urls, namespace='api')),
     url(

@@ -3,4 +3,5 @@ from . import models
 
 admin.site.register(models.TextSettings)
 admin.site.register(models.Feedback)
+admin.site.register(models.SmallFeedback)
 admin.site.register(models.Text)
