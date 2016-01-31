@@ -29,10 +29,10 @@ export class CommentForm extends React.Component {
     }
 
     handleAuthorChange(e) {
-        this.setState({author: e.target.value});
+        this.setState({first_name: e.target.value});
     }
     handleTextChange(e) {
-        this.setState({text: e.target.value});
+        this.setState({comment: e.target.value});
     }
     handleSubmit(e) {
         e.preventDefault();
