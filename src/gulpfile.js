@@ -17,7 +17,9 @@ gulp.task('js', function() {
         entries: dirs.src + '/js/main.js',
         debug: true
     })
-    .transform(babelify)
+    .transform(babelify.configure({
+        presets: ["es2015", "react"]
+    }))
     .bundle()
     .on('error', function (err) {
             console.log(err.toString());

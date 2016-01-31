@@ -6,6 +6,27 @@ from django.db import models
 from django.core.urlresolvers import reverse
 from ckeditor_uploader.fields import RichTextUploadingField
 
+class SmallFeedback(models.Model):
+    pub = models.BooleanField(
+        default=False,
+        verbose_name='Публикация'
+    )
+    first_name = models.CharField(
+        max_length=250,
+        verbose_name='Имя'
+    )
+    comment = models.TextField(
+        blank=True,
+        verbose_name='Сообщение'
+    )
+    def __str__(self):
+        return '{} - {}'.format(self.pk, self.first_name)
+
+    class Meta:
+        ordering = ['-pk']
+        verbose_name = 'Отзыв'
+        verbose_name_plural = 'Отзывы'
+    
 class Feedback(models.Model):
     first_name = models.CharField(
         max_length=250,
@@ -32,8 +53,8 @@ class Feedback(models.Model):
 
     class Meta:
         ordering = ['-pk']
-        verbose_name = 'Отзыв'
-        verbose_name_plural = 'Отзывы'
+        verbose_name = 'Вопрос'
+        verbose_name_plural = 'Вопросы'
 
 class SeoFieldsModel(models.Model):
     seo_title = models.CharField(

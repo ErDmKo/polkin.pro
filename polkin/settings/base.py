@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'ckeditor_uploader',
 
     'polkin',
-    'texts'
+    'texts',
+    'api',
 ]
 
 MIDDLEWARE_CLASSES = [
