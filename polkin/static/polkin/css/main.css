@@ -15098,6 +15098,17 @@ body {
   text-align: right;
 }
 
+.top_right_menu__item {
+  display: inline-block;
+  vertical-align: middle;
+  float: none !important;
+  margin: 0 0 0 24px;
+}
+
+.top_right_menu__item:first-child {
+  margin: 0;
+}
+
 .top_right_menu__item.active a {
   color: #77c9b3;
 }
@@ -15157,6 +15168,27 @@ body {
 
 #mainCaptionHolder {
   background: no-repeat 50% 50% / cover;
+}
+
+#topnav .mega-boler {
+  border-color: #77c9b3;
+  background: #77c9b3 !important;
+}
+
+#topnav .mega-boler:hover {
+  background: transparent !important;
+}
+
+#topnav .mega-boler:before {
+  border-color: #77c9b3 !important;
+}
+
+#topnav .mega-boler i {
+  color: #fff !important;
+}
+
+#topnav .mega-boler:hover i {
+  color: #77c9b3 !important;
 }
 
 @media print {

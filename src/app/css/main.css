@@ -15,3 +15,20 @@
 #mainCaptionHolder {
     background: no-repeat 50% 50% / cover;
 }
+#topnav .mega-boler {
+    border-color: #77c9b3;
+    background: #77c9b3 !important;
+    &:hover {
+        background: transparent !important;
+    }
+    &:before {
+        border-color: #77c9b3 !important;
+    }
+    i {
+        color: #fff !important;
+        
+    }
+}
+#topnav .mega-boler:hover i {
+            color: #77c9b3 !important;
+        }
