@@ -7,15 +7,12 @@
             <div class="span12">
                 <div class="row">
 <div class="span4 ">
-    <h2>Contact info</h2>
-    <h5>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</h5>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque la udantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.<br/>
+    <h2>{{ settings.CONTACTS_HEADER.val|safe|default:"Contact info" }}</h2>
+    <h5>{{ settings.CONTACTS_DESC1.val|safe|default:"ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam" }}.</h5>
+    <p>{{ settings.CONTACTS_DESC2.val|safe|default:"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque la udantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia." }}<br/>
     <address>
-    <strong>The Company Name Inc.<br/>
-    9870 St Vincent Place,<br/>
-    Glasgow, DC 45 Fr 45.</strong><br/>
-    Telephone: +1 800 603 6035<br/>
-    FAX: +1 800 889 9898<br/>
+    <strong>{{ settings.CONTACTS_DESC3.val|safe|default:"The Company Name Inc.<br/>9870 St Vincent Place,<br/>Glasgow, DC 45 Fr 45." }}</strong><br/>
+    {{ settings.CONTACTS_DESC4.val|safe|default:"Telephone: +1 800 603 6035<br/>FAX: +1 800 889 9898<br/>"}}
 </div>
 </address>
 <div class="span8 ">
