@@ -1,6 +1,8 @@
 @import  'theme/bootstrap.css';
 @import  'theme/responsive.css';
 
+@import  'theme/owl.carousel.css';
+@import  'theme/owl.theme.css';
 @import  'theme/cherry-plugin.css';
 @import  'theme/styles.css';
 @import  'theme/lazy-load.css';

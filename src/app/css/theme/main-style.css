@@ -1145,11 +1145,10 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { color:#888888; }
 	display:inline-block;
 	width:51px;
 	height:58px;
-	background:url('./images/icon_02.png') no-repeat 0 0;
+	background:url('../images/comment.svg') no-repeat 0 0;
 	content:"";
 	margin-bottom:7px;
 }
-.testi_1 .owl-carousel-testi .owl-wrapper-outer .owl-wrapper .owl-item .item .desc h5 { display:none; }
 .testi_1 .owl-carousel-testi .owl-wrapper-outer .owl-wrapper .owl-item .item .desc .excerpt {
 	position:relative;
 	padding:0 18%;
