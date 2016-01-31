@@ -31,12 +31,12 @@ a[href^="tel:"] {
 	visibility:hidden;
 	display:none;
 }
-.home .custom_poz { padding:5px 0 26px; }
+.home .custom_poz { padding:5px 0 15px; }
 .home .custom_poz:after { display:none; }
 .custom_poz {
 	position:relative;
 	z-index:500;
-	padding:5px 0 26px;
+	padding:5px 0 16px;
 	background:;
 	-webkit-transition:all 0.5s ease;
 	-moz-transition:all 0.5s ease;

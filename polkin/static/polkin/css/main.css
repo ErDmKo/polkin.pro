@@ -11317,7 +11317,7 @@ a[href^="tel:"] {
 }
 
 .home .custom_poz {
-  padding: 5px 0 26px;
+  padding: 5px 0 15px;
 }
 
 .home .custom_poz:after {
@@ -11327,7 +11327,7 @@ a[href^="tel:"] {
 .custom_poz {
   position: relative;
   z-index: 500;
-  padding: 5px 0 26px;
+  padding: 5px 0 16px;
   background: ;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -16353,6 +16353,26 @@ body {
     width: 100%;
   }
 
+  .top_right_menu {
+    text-align: center;
+  }
+
+  .top_right_menu__item {
+    display: block;
+  }
+
+  .top_right_menu__item {
+    margin: 0 auto;
+  }
+
+  .top_right_menu #topnav {
+    margin: 0px;
+  }
+
+  .top_right_menu #topnav a {
+    font: 30px/50px Ubuntu;
+  }
+
   .top_right_menu:after,
   .top_right_menu__contanier {
     width: 100%;
@@ -16360,6 +16380,10 @@ body {
 
   .top_right_menu:after {
     content: none;
+  }
+
+  #topnav .mega-boler {
+    margin-top: 20px;
   }
 }
 
@@ -17577,6 +17601,19 @@ body {
 
   .top_right_menu #topnav a {
     font-size: 20px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 979px) {
+
+  .top_right_menu #topnav a {
+    font-size: 17px;
+  }
+
+  #topnav .mega-boler {
+    border-radius: 38px !important;
+    font-size: 14px;
+    padding: 15px 20px !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

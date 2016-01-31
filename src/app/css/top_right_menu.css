@@ -10,16 +10,30 @@
     top: 0px;
     bottom: -10px;
     text-align: right;
+    @media (max-width: 767px)  {
+       text-align: center;
+    }
     &__item {
         display: inline-block;
         vertical-align: middle;
         float: none !important;
+        @media (max-width: 767px)  { 
+            display: block;
+        }
         &:first-child {
             margin: 0;
         }
         margin: 0 0 0 24px;
         &.active a {
             color: #77c9b3;
+        }
+        @media (max-width: 767px)  {
+            margin: 0 auto;
+        }
+    }
+    #topnav {
+        @media (max-width: 767px) {
+            margin: 0px;
         }
     }
     #topnav a {
@@ -28,9 +42,14 @@
         &:hover {
             color: #77c9b3;
         }
-    }
-    @media (min-width: 979px) {
-        #topnav a {
+        @media (max-width: 767px) {
+            font: 30px/50px Ubuntu;
+
+        }
+        @media (min-width: 767px) and (max-width: 979px) {
+            font-size: 17px;
+        }
+        @media (min-width: 979px) {
             font-size: 20px;
         }
     }
