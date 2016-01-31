@@ -19,6 +19,8 @@ class SmallFeedback(models.Model):
         blank=True,
         verbose_name='Сообщение'
     )
+    def __unicode__(self):
+        return '{} - {}'.format(self.pk, self.first_name)
 
     class Meta:
         ordering = ['-pk']
@@ -46,6 +48,9 @@ class Feedback(models.Model):
         from django.core.urlresolvers import reverse
         return reverse('thanks')
     
+    def __unicode__(self):
+        return '{} - {}'.format(self.pk, self.first_name)
+
     class Meta:
         ordering = ['-pk']
         verbose_name = 'Вопрос'
@@ -73,6 +78,9 @@ class Text(SeoFieldsModel):
         default=timezone.now, verbose_name='Дата публикации',
     )
 
+    def __unicode__(self):
+        return self.title
+
     class Meta:
         ordering = ['-pk']
         verbose_name = 'Текст'
@@ -83,6 +91,9 @@ class TextSettings(models.Model):
     name = models.SlugField(max_length=16, verbose_name='Код', unique=True)
     val = models.TextField(max_length=1000, verbose_name='Значение')
     file = models.FileField(upload_to='settings', null=True, verbose_name='Файл', blank=True)
+
+    def __unicode__(self):
+        return self.val
 
     class Meta:
         verbose_name = 'текстовая переменная'
