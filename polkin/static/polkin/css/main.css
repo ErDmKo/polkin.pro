@@ -15172,6 +15172,7 @@ body {
 
 #topnav .mega-boler {
   border-color: #77c9b3;
+  border-radius: 38px !important;
   background: #77c9b3 !important;
 }
 
@@ -15180,6 +15181,7 @@ body {
 }
 
 #topnav .mega-boler:before {
+  border-radius: 38px !important;
   border-color: #77c9b3 !important;
 }
 

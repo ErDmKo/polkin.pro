@@ -47,7 +47,7 @@
                                 </div>
                                 <div class="container">
                                     <div class="row">
-                                        <div class="logo_poz span7">
+                                        <div class="logo_poz span6">
                                             <a 
                                                 href="{% url 'main' %}"
                                                 class="text-center logo pull-left logo_info">
@@ -58,17 +58,17 @@
                                                 </div>
                                             </a>
                                         </div>
-                                        <div class="span5 menu_poz top_right_menu">
+                                        <div class="span6 menu_poz top_right_menu">
                                            <div class="block_menu top_right_menu__contanier">
                                                <nav class="nav clearfix">
-                                                   <ul class="sf-menu" id="topnav">
+                                                   <ul class="" id="topnav">
                                                        <li class="top_right_menu__item">
                                                            <a href="tel:+79108637283">+7(910)863-72-83</a>
                                                        </li>
                                                        <li class="top_right_menu__item">
                                                             <a href="">
                                                                 <section class="btn-primary mega-boler">
-                                                                    Задать вопрос
+                                                                    Спросить врача
                                                                 </section>
                                                             </a>
                                                        </li>
@@ -94,12 +94,12 @@
                            <ul class="title-section">
                                <li class="{% if object.slug == 'about' %}active {% endif %}top_right_menu__item">
                                    <a href="{% url 'detail' slug='about' %}">
-                                       <h2>О враче</h2>
+                                       <h2 class="title-header">О враче</h2>
                                    </a>
                                </li>
                                <li class="{% if object.slug == 'treatment' %}active {% endif %}top_right_menu__item">
                                    <a href="{% url 'detail' slug='treatment' %}">
-                                        <h2>Лечение</h2>
+                                        <h2 class="title-header">Лечение</h2>
                                     </a>
                                </li>
                            </ul>

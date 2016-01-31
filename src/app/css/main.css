@@ -17,16 +17,18 @@
 }
 #topnav .mega-boler {
     border-color: #77c9b3;
+    border-radius: 38px !important;
     background: #77c9b3 !important;
     &:hover {
         background: transparent !important;
     }
     &:before {
+        border-radius: 38px !important;
         border-color: #77c9b3 !important;
     }
     i {
         color: #fff !important;
-        
+
     }
 }
 #topnav .mega-boler:hover i {
