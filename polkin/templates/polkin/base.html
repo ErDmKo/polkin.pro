@@ -195,6 +195,10 @@
     </body>
     <script>
         var CONFIG = {
+            adressCoords: {
+                lat: {{ settings.LAT_COORD|default:'55.1103277' }},
+                lng: {{ settings.LNG_COORD|default:'36.6120419' }}
+            },
             urls: {
                 'feedback': '{% url 'api:feedback' %}',
                 'smallfeedback': '{% url 'api:smallfeedback' %}',

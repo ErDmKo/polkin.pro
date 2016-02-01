@@ -1,6 +1,7 @@
 {% extends 'polkin/base.html' %}
 {% load staticfiles %}
 {% block 'content' %}
+<script type='text/javascript' src='//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&ver=4.2.6'></script>
 <div class="motopress-wrapper content-holder clearfix">
     <div class="container">
         <div class="row">
@@ -21,6 +22,15 @@
     </div>
 </div>
 </div> 
+<div class="row">
+<div class="span12 ">
+    <div class="google-map-api google-map-custom-class">
+        <div id="map-canvas-1514489400" class="gmap">
+        </div>
+    </div>
+<div class="spacer"></div>
+</div>
+</div>
             </div>
         </div>
     </div>

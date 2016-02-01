@@ -289,7 +289,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { color:#888888; }
 }
 #search-header input::-webkit-input-placeholder, #search-header textarea::-webkit-input-placeholder { color:#888888 !important; }
 #search-header input::-moz-placeholder, #search-header textarea::-moz-placeholder { color:#888888 !important; }
-.wpcf7-form p.field input { line-height:inherit; }
+.wpcf7-form div.field input { line-height:inherit; }
 .wpcf7-not-valid-tip { padding-top:15px !important; }
 .submit-wrap .ajax-loader { margin-top:12px; }
 .content-holder {

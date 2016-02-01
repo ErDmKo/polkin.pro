@@ -10862,14 +10862,14 @@ label[for^=pwbox] {
   display: inline-block;
 }
 
-.wpcf7-form p.field {
+.wpcf7-form div.field {
   position: relative;
   overflow: hidden;
   margin-bottom: 15px;
   vertical-align: top;
 }
 
-.wpcf7-form p.field input {
+.wpcf7-form div.field input {
   margin: 0;
   padding: 6px 6px 7px 6px;
   width: 100%;
@@ -10878,7 +10878,7 @@ label[for^=pwbox] {
   box-sizing: border-box;
 }
 
-.wpcf7-form p.field input[type="file"] {
+.wpcf7-form div.field input[type="file"] {
   position: relative;
   cursor: pointer;
   height: 25px;
@@ -12020,7 +12020,7 @@ h6 small {
   color: #888888 !important;
 }
 
-.wpcf7-form p.field input {
+.wpcf7-form div.field input {
   line-height: inherit;
 }
 

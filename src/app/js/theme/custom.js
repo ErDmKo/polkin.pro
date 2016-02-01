@@ -32,7 +32,24 @@ $.ajaxSetup({
 });
 var items_custom = [[0,1],[1200,1],[980,1],[768,1],[480,1]];
 jQuery(document).ready(function(){
-
+        var map = $('#map-canvas-1514489400');
+        if (map.length) {
+            var coordData = new google.maps.LatLng(
+                parseFloat(CONFIG.adressCoords.lat),
+                parseFloat(CONFIG.adressCoords.lng)
+            )
+            var mapOptions = {
+                    zoom: 14,
+                    center: coordData,
+                    scrollwheel: false
+                }
+            var map = new google.maps.Map(map[0], mapOptions);
+            marker = new google.maps.Marker({
+                map: map,
+                draggable: true,
+                position: coordData
+            });
+        }
         if(!device.mobile() && !device.tablet()){
             liteModeSwitcher = false;
         }else{
