@@ -3,6 +3,7 @@ from django.contrib import admin
 from django.views import generic
 from api import urls as api_urls
 from texts import models as texts_models
+from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -20,4 +21,4 @@ urlpatterns = [
             model = texts_models.Text,
         ),
     name='detail')
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
