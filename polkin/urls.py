@@ -3,6 +3,7 @@ from django.contrib import admin
 from django.views import generic
 from api import urls as api_urls
 from texts import models as texts_models
+from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
