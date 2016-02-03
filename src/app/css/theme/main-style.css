@@ -692,7 +692,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { color:#888888; }
 .parallax-slider {
 	margin-bottom:-1px;
 	margin-left:0;
-	height:560px !important;
+	height:460px !important;
 }
 .parallax-slider #mainCaptionHolder .container {
 	position:relative;
@@ -702,7 +702,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { color:#888888; }
 	top:auto;
 	bottom:100%;
 	width:100%;
-	padding-bottom:182px;
+	padding-bottom:132px;
 }
 @media (min-width: 1200px) {
 	.parallax-slider #mainCaptionHolder .container {
@@ -1134,6 +1134,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { color:#888888; }
 }
 .testi_1 h2 {
 	text-align:center;
+	margin-top: 45px;
 	margin-bottom:19px;
 }
 .testi_1 .owl-carousel-testi .owl-wrapper-outer .owl-wrapper .owl-item {
@@ -2075,7 +2076,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { color:#888888; }
 	position:relative;
 	display:block;
 	text-align:center;
-	padding:67px 0 35px;
+	padding:30px 0 30px;
 }
 .service-box2 .icon {
 	position:relative;
@@ -2193,7 +2194,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { color:#888888; }
 }
 .arrow-list ul li:before { display:none; }
 .footer {
-	padding:0 0 35px;
+	padding:0 0 0px;
 	border:none;
 	background:#fff;
 	color:#888888;

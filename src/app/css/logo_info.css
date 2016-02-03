@@ -7,6 +7,15 @@
             display: block;
             margin: 0 auto 15px;
         }
+        &.gray {
+            .st0{
+                fill:none;
+                stroke:#888888;
+            }
+            .st1{
+                fill:#888888;
+            } 
+        }
     }
     &__contanier, &__svg {
         display: inline-block;

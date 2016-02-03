@@ -12529,7 +12529,7 @@ h6 small {
 .parallax-slider {
   margin-bottom: -1px;
   margin-left: 0;
-  height: 560px !important;
+  height: 460px !important;
 }
 
 .parallax-slider #mainCaptionHolder .container {
@@ -12541,7 +12541,7 @@ h6 small {
   top: auto;
   bottom: 100%;
   width: 100%;
-  padding-bottom: 182px;
+  padding-bottom: 132px;
 }
 
 .parallax-slider #mainCaptionHolder .container .slider_caption a {
@@ -12988,6 +12988,7 @@ h6 small {
 
 .testi_1 h2 {
   text-align: center;
+  margin-top: 45px;
   margin-bottom: 19px;
 }
 
@@ -14264,7 +14265,7 @@ h6 small {
   position: relative;
   display: block;
   text-align: center;
-  padding: 67px 0 35px;
+  padding: 30px 0 30px;
 }
 
 .service-box2 .icon {
@@ -14412,7 +14413,7 @@ h6 small {
 }
 
 .footer {
-  padding: 0 0 35px;
+  padding: 0 0 0px;
   border: none;
   background: #fff;
   color: #888888;
@@ -15366,6 +15367,15 @@ body {
   width: 70px;
   height: 70px;
   margin-right: 10px;
+}
+
+.logo_info__svg.gray .st0 {
+  fill: none;
+  stroke: #888888;
+}
+
+.logo_info__svg.gray .st1 {
+  fill: #888888;
 }
 
 .logo_info__contanier,
