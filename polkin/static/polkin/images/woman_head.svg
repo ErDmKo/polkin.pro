@@ -1,24 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 368.3 355.5" style="enable-background:new 0 0 368.3 355.5;" xml:space="preserve">
 <style type="text/css">
-	.head_thyroid .st0{
-        fill:#888888;
-        stroke: none;
-    }
-	.head_thyroid .st1{
-        fill:#888888;
-    }
-	.head_thyroid .st2{
-        fill:#888888;
-    }
-	.head_thyroid .st3{
-        fill:#7BB9DF;
-    }
-	.head_thyroid .st4{
-        fill:#888888;
-    }
+	.st0{fill:#888887;}
+	.st1{fill:#77BDAB;}
 </style>
-<g class="head_thyroid">
 <g id="hjUXOb.tif">
 	<g>
 		<path class="st0" d="M277.9,106.2c-0.5,0.9-1.1,1.8-1.4,2.8c-0.3,1.1-0.1,2,0.9,2.9c0.6,0.5,0.9,1.8,0.7,2.7
@@ -86,6 +73,5 @@
 			c1.3-1.7,3.3-2.2,5.1-2.5C219.1,90.7,223.1,90.3,226.6,89.8z"/>
 	</g>
 </g>
-<ellipse class="st2" cx="209.7" cy="285.5" rx="20.8" ry="27.4"/>
-</g>
+<ellipse class="st1" cx="209.7" cy="285.5" rx="20.8" ry="27.4"/>
 </svg>

@@ -1,18 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 349.4 337.4" style="enable-background:new 0 0 349.4 337.4;" xml:space="preserve">
 <style type="text/css">
-	.head_svg .st0 {
-        fill:#888888;
-        stroke: none;
-    }
-	.head_svg .st1{
-        fill:none;
-    }
-	.head_svg .st2{
-        fill:#888888;
-    }
+	.st0{fill:#888887;}
+	.st1{fill:#77BDAB;}
 </style>
-<g class="head_svg" id="Layer_1">
 <g id="pHuDOJ.tif">
 	<g>
 		<path class="st0" d="M86.8,155c0-1.6-0.1-3.2,0-4.7c0.1-1.7,0.3-3.5,0.7-5.2c0.1-0.6,0.7-1.3,1.2-1.5c0.7-0.3,1.9-0.5,2.4-0.1
@@ -96,7 +89,6 @@
 			C133.5,318.5,133.5,319.4,133.4,320.7z"/>
 	</g>
 </g>
-<ellipse transform="matrix(0.1891 -0.982 0.982 0.1891 59.0474 260.5768)" class="st2" cx="187.3" cy="94.5" rx="53.1" ry="24.1"/>
-<ellipse transform="matrix(0.3937 -0.9192 0.9192 0.3937 -111.2819 328.4078)" class="st2" cx="193.3" cy="248.6" rx="38.4" ry="23"/>
-</g>
+<ellipse transform="matrix(0.1891 -0.982 0.982 0.1891 59.0474 260.5768)" class="st1" cx="187.3" cy="94.5" rx="53.1" ry="24.1"/>
+<ellipse transform="matrix(0.3937 -0.9192 0.9192 0.3937 -111.2819 328.4078)" class="st1" cx="193.3" cy="248.6" rx="38.4" ry="23"/>
 </svg>
