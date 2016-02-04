@@ -8,6 +8,7 @@ class SmallFeedBackSerializer(serializers.ModelSerializer):
         fields = (
             'first_name',
             'comment',
+            'url'
         )
 
 class FeedBackSerializer(serializers.ModelSerializer):
