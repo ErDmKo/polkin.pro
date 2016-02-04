@@ -15506,6 +15506,10 @@ body {
   color: #888888;
 }
 
+.border_selection {
+  background: #fafafa;
+}
+
 .border_selection__contanier {
   position: relative;
 }
@@ -15553,7 +15557,7 @@ body {
   width: 150%;
   height: 100%;
   z-index: -1;
-  background: #fafafa;
+  background: #f0f0f0;
   position: absolute;
   opacity: 0;
   -webkit-transition: opacity .2s;
