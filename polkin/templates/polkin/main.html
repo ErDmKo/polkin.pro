@@ -27,12 +27,12 @@
         </li>
     </ul>
 </div>
-<div class="motopress-wrapper title-section content-holder clearfix">
+<div class="motopress-wrapper title-section border_selection content-holder clearfix">
     <div class="container">
         <div class="row">
-            <div class="span12">
+            <div class="span12 border_selection__contanier">
                 <div class="row">
-                    <div class="span6">
+                    <div class="span6 border_selection__item">
                         <section 
                             class="lazy-load-box trigger effect-slidefromleft"
                             style="-webkit-transition: all 900ms ease; -moz-transition: all 900ms ease; -ms-transition: all 900ms ease; -o-transition: all 900ms ease; transition: all 900ms ease;">
@@ -44,17 +44,20 @@
                                         {% include 'polkin/svg/head_thyroid.svg' %}
                                     </div>
                                 </figure>
-                                <div
-                                     class="service-box2_body">
+                                <div class="service-box2_body">
                                      <h3
                                          class="title svg_cat__title">
-                                            щитовидная железа
+                                            Заболевания щитовидной железы
                                     </h3>
+                                    <div class="service-box_txt border_selection__list">
+                                        <span href="{% url 'detail' slug='thyroid_nodes' %}">Узлы щитовидной железы</span><br/>
+                                        <span href="{% url 'detail' slug='thyroid_cancer' %}">Опухоли щитовидной железы</span>
+                                    </div>
                                 </div>
                            </a>
                         </section>
                     </div>
-                    <div class="span6">
+                    <div class="span6 border_selection__item">
                         <section
                             class="lazy-load-box trigger effect-slidefromright"
                             style="-webkit-transition: all 900ms ease; -moz-transition: all 900ms ease; -ms-transition: all 900ms ease; -o-transition: all 900ms ease; transition: all 900ms ease;">
@@ -72,6 +75,10 @@
                                          class="title svg_cat__title">
                                                 опухоли головы и шеи
                                     </h3>
+                                    <div class="service-box_txt border_selection__list">
+                                        <span href="{% url 'detail' slug='thyroid_nodes' %}">Раздел 1</span><br/>
+                                        <span href="{% url 'detail' slug='thyroid_cancer' %}">Раздел 2</span>
+                                    </div>
                                 </div>
                            </a>
                         </section>
@@ -86,31 +93,45 @@
 <div class="row ">
 <div class="span12 ">
     <section
-         class="lazy-load-box trigger effect-slideup"
+        id="comment_block"
+         class="lazy-load-box trigger comment_block effect-slideup"
          style="-webkit-transition: all 1200ms ease; -moz-transition: all 1200ms ease; -ms-transition: all 1200ms ease; -o-transition: all 1200ms ease; transition: all 1200ms ease;">
         <div class="carousel-wrap testi_1">
-            <h2 ><a id="smallfeedback">Отзывы</a></h2>
+            <h2 class="comment_block__header"><a id="smallfeedback">Отзывы</a></h2>
             {% if object_list|length %}
             <div id="owl-carousel-56ac7db9b5d37"
                  class="owl-carousel-testi owl-carousel"
                  data-items="1"
                  data-auto-play="0"
-                 data-nav="false"
-                 data-pagination="true">
+                 data-nav="true"
+                 data-pagination="false">
                  {% for feedback in object_list %}
                  <div class="item format-standart item-list-0">
                      <div class="desc">
-                         <h5>
+                         <a 
+                            target="_blank"
+                            href="{{ feedback.url }}"
+                            class="comment_block__name">
+                            <i class="fa fa-facebook-official"></i>
                             {{ feedback.first_name }}
-                        </h5>
+                        </a>
+                         <div class="comment_block__date">
+                            {{ feedback.date|date:"j E Y" }}
+                        </div>
                         <p class="excerpt">
-                            {{ feedback.comment }}
+                            <span >{{ feedback.comment|slice:":150" }}</span>
+                            {% if feedback.comment|length > 150 %}
+                            ...
+                            <a 
+                                class="popup-with-move-anim comment_block__full"
+                                href="#full-comment{{ feedback.id }}"> Читать&nbsp;полностью&nbsp;>
+                            </a>
+                            {% endif %}
                         </p>
                         <a 
                             href="#small-dialog"
-                            class="btn btn-primary popup-with-move-anim"
+                            class="comment_block__edit fa fa-pencil popup-with-move-anim"
                             title="Testimonial #3">
-                            Оставить отзыв
                         </a>
                     </div>
                 </div>
@@ -132,6 +153,19 @@
 </div> 
 </div>
 </div>
+{% for feedback in object_list %}
+<div id="full-comment{{ feedback.id }}" class="magnific-popup zoom-anim-dialog mfp-hide">
+    <h3>
+        <a href="{{ feedback.url }}" target="_blank">
+            <i class="fa fa-facebook-official"></i>
+            {{ feedback.first_name }}
+        </a>
+    </h3>
+    <div>
+        {{ feedback.comment }}
+    </div>
+</div>
+{% endfor %}
 <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
 </div>
 {% endblock %}

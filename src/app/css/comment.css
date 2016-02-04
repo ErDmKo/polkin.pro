@@ -1,0 +1,5 @@
+.comment_block {
+    &__header a {
+        text-transform: none;
+    }
+}

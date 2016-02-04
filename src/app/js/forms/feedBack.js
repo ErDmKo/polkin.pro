@@ -19,15 +19,6 @@ class BigForm extends CommentForm {
                 comment: [],
             }
         }
-        this.handleStateKey = this.handleStateKey.bind(this);
-    }
-    handleStateKey(key) {
-        return (e) => {
-            console.log(key);
-            this.setState({
-                [key]: e.target.value
-            })
-        }
     }
     handleSubmit(e) {
         e.preventDefault();

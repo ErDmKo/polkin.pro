@@ -42,6 +42,6 @@ function cherryPluginCarouselInit() {
 			itemsCustom: items_custom
 		});
 	})
-	jQuery('.owl-prev').addClass('icon-chevron-left');
-	jQuery('.owl-next').addClass('icon-chevron-right');
+	jQuery('.owl-prev').addClass('fa fa-angle-left');
+	jQuery('.owl-next').addClass('fa fa-angle-right');
 }

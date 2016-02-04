@@ -32,6 +32,9 @@ $.ajaxSetup({
 });
 var items_custom = [[0,1],[1200,1],[980,1],[768,1],[480,1]];
 jQuery(document).ready(function(){
+        $('.click-next-show').click(function(){
+            $(this).next().removeClass('hidden');
+        })
         var map = $('#map-canvas-1514489400');
         if (map.length) {
             var coordData = new google.maps.LatLng(

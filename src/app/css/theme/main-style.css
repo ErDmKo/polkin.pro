@@ -301,10 +301,13 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { color:#888888; }
 	position:relative;
 	display:inline-block;
 	width:100%;
-	padding:10px 0;
+	padding:0px 0;
 	margin-bottom:0;
 	background:#f8f8f8;
 	border:none;
+}
+.title-section.border {
+	border-bottom: 1px solid #888888;
 }
 .title-section:before, .title-section:after {
 	position:absolute;
@@ -1140,15 +1143,6 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { color:#888888; }
 .testi_1 .owl-carousel-testi .owl-wrapper-outer .owl-wrapper .owl-item {
 	position:relative;
 	text-align:center;
-}
-.testi_1 .owl-carousel-testi .owl-wrapper-outer .owl-wrapper .owl-item .item .desc:before {
-	position:relative;
-	display:inline-block;
-	width:51px;
-	height:58px;
-	background:url('../images/comment.svg') no-repeat 0 0;
-	content:"";
-	margin-bottom:7px;
 }
 .testi_1 .owl-carousel-testi .owl-wrapper-outer .owl-wrapper .owl-item .item .desc .excerpt {
 	position:relative;

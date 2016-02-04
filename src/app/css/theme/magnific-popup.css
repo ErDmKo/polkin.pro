@@ -541,3 +541,11 @@ img.mfp-img {
     margin: 40px auto;
     position: relative;
 }
+.magnific-popup {
+    background: white;
+    padding: 20px 30px;
+    text-align: left;
+    max-width: 400px;
+    margin: 40px auto;
+    position: relative;
+}

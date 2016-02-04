@@ -11,6 +11,10 @@ class SmallFeedback(models.Model):
         default=False,
         verbose_name='Публикация'
     )
+    url = models.URLField(
+        default='https://www.google.ru',
+        verbose_name='Cсылка в сети'
+    )
     first_name = models.CharField(
         max_length=250,
         verbose_name='Имя'

@@ -19,13 +19,21 @@ export class CommentForm extends React.Component {
             comment: '',
             errors: {
                 first_name: [],
-                comment: []
+                comment: [],
+                url: []
             }
         };
-        this.handleTextChange = this.handleTextChange.bind(this);
-        this.handleAuthorChange = this.handleAuthorChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleCommentSubmit = this.handleCommentSubmit.bind(this);
+        this.handleStateKey = this.handleStateKey.bind(this);
+    }
+    handleStateKey(key) {
+        return (e) => {
+            console.log(key);
+            this.setState({
+                [key]: e.target.value
+            })
+        }
     }
 
     handleAuthorChange(e) {
@@ -36,12 +44,11 @@ export class CommentForm extends React.Component {
     }
     handleSubmit(e) {
         e.preventDefault();
-        var first_name = this.state.first_name.trim();
-        var comment = this.state.comment.trim();
         this.handleCommentSubmit(
             CONFIG.urls.smallfeedback, {
-            first_name: first_name,
-            comment: comment
+            first_name: this.state.first_name.trim(),
+            url: this.state.url.trim(),
+            comment: this.state.comment.trim()
         });
     }
     handleCommentSubmit(url, comment) {
@@ -75,16 +82,22 @@ export class CommentForm extends React.Component {
                 <input 
                     style={{width: '100%' }}
                     placeholder="Ваше имя"
-                    className=""
                     value={this.state.first_name}
-                    onChange={this.handleAuthorChange}
+                    onChange={this.handleStateKey('first_name')}
                     type="text"/>
                 <ValidationErros errors={this.state.errors.first_name}/>
+                <input 
+                    style={{width: '100%' }}
+                    placeholder="Адрес в сети"
+                    value={this.state.url}
+                    onChange={this.handleStateKey('url')}
+                    type="text"/>
+                <ValidationErros errors={this.state.errors.url}/>
                 <textarea 
                     style={{width: '100%' }}
                     className=""
                     value={this.state.comment}
-                    onChange={this.handleTextChange}
+                    onChange={this.handleStateKey('comment')}
                     placeholder="Отзыв"></textarea>
                 <ValidationErros errors={this.state.errors.comment}/>
                 <div
