@@ -2,6 +2,10 @@
     &__svg_icon {
         svg {
             height: 117px;
+            transition: transform .2s;
+            .svg_cat:hover & {
+                transform: scale(1.1, 1.1);
+            }
             .st2, .head_thyroid .st1 {
                 transition: all 0.4s ease;
                 .svg_cat:hover & {

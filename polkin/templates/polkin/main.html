@@ -14,20 +14,18 @@
                     Консультации и лечение 
                 </h2>
                 <h2 class="type_2">
-                    рака щитовидной железы
+                    опухолей щитовидной железы
                 </h2>
                 <a 
-                    class="btn-primary" 
+                    class="" 
                     href="{% url 'contacts' %}">
-                    <div>
-                        <i>Задать вопрос врачу</i>
-                    </div>
+                    Задать вопрос врачу >
                 </a>
             </div>
         </li>
     </ul>
 </div>
-<div class="motopress-wrapper title-section border_selection content-holder clearfix">
+<div class="motopress-wrapper border_selection content-holder clearfix">
     <div class="container">
         <div class="row">
             <div class="span12 border_selection__contanier">
@@ -36,9 +34,7 @@
                         <section 
                             class="lazy-load-box trigger effect-slidefromleft"
                             style="-webkit-transition: all 900ms ease; -moz-transition: all 900ms ease; -ms-transition: all 900ms ease; -o-transition: all 900ms ease; transition: all 900ms ease;">
-                           <a
-                            href="{% url 'detail' slug='thyroid' %}"
-                            class="svg_cat  service-box2">
+                           <div class="svg_cat  service-box2">
                                 <figure>
                                     <div class="svg_cat__svg_icon" >
                                         {% include 'polkin/svg/head_thyroid.svg' %}
@@ -47,22 +43,32 @@
                                 <div class="service-box2_body">
                                      <h3
                                          class="title svg_cat__title">
-                                            Заболевания щитовидной железы
+                                            <a 
+                                            href="{% url 'detail' slug='thyroid' %}">
+                                                Заболевания щитовидной железы
+                                            </a>
                                     </h3>
                                     <div class="service-box_txt border_selection__list">
-                                        <span href="{% url 'detail' slug='thyroid_nodes' %}">Узлы щитовидной железы</span><br/>
-                                        <span href="{% url 'detail' slug='thyroid_cancer' %}">Опухоли щитовидной железы</span>
+                                        <a 
+                                            class="border_selection__ancor"
+                                            href="{% url 'detail' slug='thyroid_nodes' %}">
+                                            Узлы щитовидной железы >
+                                        </a>
+                                        <a 
+                                            class="border_selection__ancor"
+                                            href="{% url 'detail' slug='thyroid_cancer' %}">
+                                            Опухоли щитовидной железы >
+                                        </a>
                                     </div>
                                 </div>
-                           </a>
+                           </div>
                         </section>
                     </div>
                     <div class="span6 border_selection__item">
                         <section
                             class="lazy-load-box trigger effect-slidefromright"
                             style="-webkit-transition: all 900ms ease; -moz-transition: all 900ms ease; -ms-transition: all 900ms ease; -o-transition: all 900ms ease; transition: all 900ms ease;">
-                           <a
-                            href="{% url 'detail' slug='cancer' %}"
+                           <div
                             class="svg_cat service-box2">
                                 <figure>
                                     <div class="svg_cat__svg_icon" >
@@ -73,14 +79,25 @@
                                      class="service-box2_body">
                                      <h3
                                          class="title svg_cat__title">
-                                                опухоли головы и шеи
+                                        <a 
+                                        href="{% url 'detail' slug='cancer' %}">
+                                            опухоли головы и шеи
+                                        </a>
                                     </h3>
                                     <div class="service-box_txt border_selection__list">
-                                        <span href="{% url 'detail' slug='thyroid_nodes' %}">Раздел 1</span><br/>
-                                        <span href="{% url 'detail' slug='thyroid_cancer' %}">Раздел 2</span>
+                                        <a 
+                                            class="border_selection__ancor"
+                                            href="{% url 'detail' slug='thyroid_nodes' %}">
+                                            Раздел 1 >
+                                        </a>
+                                        <a 
+                                            class="border_selection__ancor"
+                                            href="{% url 'detail' slug='thyroid_cancer' %}">
+                                            Раздел 2 >
+                                        </a>
                                     </div>
                                 </div>
-                           </a>
+                           </div>
                         </section>
                     </div>
                 </div>

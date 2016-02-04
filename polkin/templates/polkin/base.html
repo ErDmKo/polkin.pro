@@ -142,16 +142,14 @@
 <div data-motopress-type="dynamic-sidebar" data-motopress-sidebar-id="footer-sidebar-1">
 <div id="text-5" class="visible-all-devices row footer_block__relative">
     <div class="span3">
-        <div class="row">
-            <a href="http://mrrc-obninsk.ru/" target="_blank">
-                <div class="footer_block__svg span5">
-                    {% include 'polkin/svg/logo.svg' %}
-                </div>
-                <div class="footer_block__logo span7">
-                    мрнц рамн <br/> Обнинск
-                </div>
-            </a>
-        </div>
+        <a class="footer_block__logoAncor" href="http://mrrc-obninsk.ru/" target="_blank">
+            <div class="footer_block__svg">
+                {% include 'polkin/svg/logo.svg' %}
+            </div>
+            <div class="footer_block__logo">
+                мрнц рамн <br/> Обнинск
+            </div>
+        </a>
     </div>
     <div class="span5 footer_block__menu">
         <div class="row">
@@ -179,8 +177,8 @@
                 <span class="footer_block__ancor">Страницы в соцсетях</span>
                 <div>
                     <a href="/"><i class="fa fa-facebook-official"></i></a>
-                    <a href="/"><i class="fa fa-facebook-official"></i></a>
-                    <a href="/"><i class="fa fa-facebook-official"></i></a>
+                    <a href="/"><i class="fa fa-twitter"></i></a>
+                    <a href="/"><i class="fa fa-vk"></i></a>
                 </div>
             </div>
             <div class="span6 footer_block__item">
@@ -194,9 +192,10 @@
         <div class="footer_block__ancor">Контакты для связи с врачем</div>
         <div class="footer_block__contacts">
             <a class="footer_block__phone" href="tel:+79108637283">+7(910)863-72-83</a>
+            <b class="address-bullet">•</b>
             <a 
                 href="mailto:head.neck.oncologist@gmail.com" 
-                class="footer_block__email">head.neck.oncologist@gmail.com</a>
+                class="footer_block__email">head.neck.oncologist@gmail.com</a><br/>
             <span class="footer_block__address">Калужская область, г.Обнинск, ул.Королева, 4</p>
         </div>
     </div> 

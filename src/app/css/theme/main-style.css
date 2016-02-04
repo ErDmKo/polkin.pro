@@ -2579,7 +2579,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { color:#888888; }
 }
 @media (min-width: 979px) and (max-width: 1200px) {
 	.parallax-slider { height:400px !important; }
-	.parallax-slider #mainCaptionHolder .container >div { padding-bottom:100px; }
+	.parallax-slider #mainCaptionHolder .container >div { padding-bottom:60px; }
 	.parallax-slider .controlBtn .icon-angle-right { right:10px !important; }
 	.parallax-slider .controlBtn .icon-angle-left { left:10px !important; }
 	.related-posts ul li >a {
@@ -2728,12 +2728,13 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { color:#888888; }
 .parallax-slider #mainCaptionHolder .container { top:30%; }
 .parallax-slider #mainCaptionHolder .slider_caption {
 	text-align:center;
-	font-size:80px;
+	font-size:20px;
 	line-height:80px;
 	font-weight:300;
 	color:#fff;
 	text-shadow:1px 1px 0 rgba(0,0,0,0.25);
 }
+
 .parallax-slider #mainCaptionHolder .slider_caption h1, .parallax-slider #mainCaptionHolder .slider_caption h2 {
 	font-size:130px;
 	line-height:120px;

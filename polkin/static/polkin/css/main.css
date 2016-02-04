@@ -14920,7 +14920,7 @@ a.thumbnail:hover .zoom-icon,
 
 .parallax-slider #mainCaptionHolder .slider_caption {
   text-align: center;
-  font-size: 80px;
+  font-size: 20px;
   line-height: 80px;
   font-weight: 300;
   color: #fff;
@@ -15469,6 +15469,16 @@ body {
 
 .svg_cat__svg_icon svg {
   height: 117px;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.svg_cat:hover .svg_cat__svg_icon svg {
+  -webkit-transform: scale(1.1, 1.1);
+      -ms-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
 .svg_cat__svg_icon svg .st2,
@@ -15496,10 +15506,6 @@ body {
   color: #888888;
 }
 
-.border_selection {
-  border-bottom: 1px solid #888888;
-}
-
 .border_selection__contanier {
   position: relative;
 }
@@ -15511,8 +15517,14 @@ body {
   left: 50%;
   z-index: 1;
   height: 100%;
-  background: #888;
+  background: #f0f0f0;
   top: 0;
+}
+
+.border_selection__ancor {
+  font-size: 15px;
+  display: block;
+  margin: 7px 0px;
 }
 
 .border_selection__list {
@@ -15541,7 +15553,7 @@ body {
   width: 150%;
   height: 100%;
   z-index: -1;
-  background: #ccc;
+  background: #fafafa;
   position: absolute;
   opacity: 0;
   -webkit-transition: opacity .2s;
@@ -15606,7 +15618,7 @@ body {
 }
 
 #footer_block.footer_block {
-  background: #888;
+  background: #777;
   color: #ddd;
 }
 
@@ -15695,17 +15707,66 @@ body {
 }
 
 .footer_block a:hover {
-  color: #77c9b3;
+  color: #fff;
+}
+
+.footer_block__logo,
+.footer_block__svg {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .footer_block__logo {
   text-transform: uppercase;
-  padding-top: 12px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.footer_block__logo:after {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: -6px;
+  bottom: -6px;
+  width: 1px;
+  background: #ddd;
+  -webkit-transition: background-color .2s;
+  transition: background-color .2s;
+}
+
+.footer_block__logoAncor:hover .footer_block__logo:after {
+  background: #fff;
+}
+
+.footer_block__svg {
+  margin-left: 20px;
+}
+
+.footer_block__logoAncor:hover .footer_block__svg .st0 {
+  stroke: #fff;
+}
+
+.footer_block__logoAncor:hover .footer_block__svg .st1 {
+  fill: #fff;
 }
 
 .footer_block__svg svg {
   width: 70px;
   height: 70px;
+}
+
+.footer_block__svg svg path,
+.footer_block__svg svg circle {
+  -webkit-transition: fill .2s, stroke .2s;
+  transition: fill .2s, stroke .2s;
+}
+
+.footer_block__svg svg .st0 {
+  stroke: #ddd;
+}
+
+.footer_block__svg svg .st1 {
+  fill: #ddd;
 }
 
 #mainCaptionHolder {
@@ -18104,7 +18165,7 @@ body {
   }
 
   .parallax-slider #mainCaptionHolder .container >div {
-    padding-bottom: 100px;
+    padding-bottom: 60px;
   }
 
   .parallax-slider .controlBtn .icon-angle-right {

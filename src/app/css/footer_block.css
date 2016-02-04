@@ -1,5 +1,5 @@
 #footer_block.footer_block {
-    background: #888;
+    background: #777;
     color: #ddd;
     &__svg {
         width: 70px;
@@ -64,15 +64,54 @@
      a {
         color: #ddd;
         &:hover {
-            color: #77c9b3;
+            color: #fff;
         }
+    }
+    &__logo, &__svg {
+        display: inline-block;
+        vertical-align: middle;
     }
     &__logo {
         text-transform: uppercase;
-        padding-top: 12px;
+        margin-left: 10px;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            left: -7px;
+            top: -6px;
+            bottom: -6px;
+            width: 1px;
+            background: #ddd;
+            transition: background-color .2s;
+            .footer_block__logoAncor:hover & {
+
+                background: #fff;
+            }
+        }
     }
-    &__svg svg{
-        width: 70px;
-        height: 70px;
+    &__svg {
+        margin-left: 20px;
+        .footer_block__logoAncor:hover & {
+            .st0 {
+                stroke: #fff;
+            }
+            .st1 {
+                fill: #fff;
+            }    
+        }
+        svg {
+            width: 70px;
+            height: 70px;
+            path, circle {
+                transition: fill .2s, stroke .2s;
+            }
+            .st0 {
+                stroke: #ddd;
+            }
+            .st1 {
+                fill: #ddd;
+            }
+        }
     }
 }

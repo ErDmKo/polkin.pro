@@ -1,5 +1,5 @@
 .border_selection {
-    border-bottom: 1px solid #888888;
+    
     &__contanier {
         position: relative;
         &:after {
@@ -9,13 +9,18 @@
             left: 50%;
             z-index: 1;
             height: 100%;
-            background: #888;
+            background: #f0f0f0;
             top: 0;
             @media(max-width: 767px) {
                 content: none;
             }
 
         }    
+    }
+    &__ancor {
+        font-size: 15px;
+        display: block;
+        margin: 7px 0px;
     }
     &__list {
         max-height: 0;
@@ -37,7 +42,7 @@
             width: 150%;
             height: 100%;
             z-index: -1;
-            background: #ccc;
+            background: #fafafa;
             position: absolute;
             opacity: 0;
             transition: opacity .2s;
